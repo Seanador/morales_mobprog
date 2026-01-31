@@ -5,6 +5,7 @@ import '/screens/home_screen.dart';
 import '/screens/newsfeed_screen.dart';
 import '/screens/login_screen.dart';
 import '/screens/register_screen.dart';
+import '/screens/splash_screen.dart';
 
 void main() => runApp(const MoralesFacebook());
 
@@ -21,12 +22,13 @@ class MoralesFacebook extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Facebook Replication',
-          initialRoute: '/login',
+          initialRoute: '/splash',
           routes: {
             '/newsfeed': (context) => const NewsFeedScreen(),
             '/home': (context) => const HomeScreen(username: ''),
             '/login': (context) => const LogInScreen(),
             '/register': (context) => const RegisterScreen(),
+            '/splash': (context) => const SplashScreen(),
           },
         );
       },

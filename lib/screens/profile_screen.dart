@@ -5,6 +5,7 @@ import '../widgets/custom_font.dart';
 import '../widgets/custom_button.dart';
 import '../constants.dart';
 import '../widgets/post_card.dart';
+import '../widgets/custom_dialogs.dart';
 
 class ProfileScreen extends StatefulWidget {
   final String username;
@@ -266,39 +267,45 @@ class _ProfileScreenState extends State<ProfileScreen> {
       mainAxisSpacing: 10,
       crossAxisCount: 2,
       children: <Widget>[
-        Container(
-          decoration: BoxDecoration(
+        GestureDetector(
+          child: Image.network(
+            'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GMlYwNPVqlQQ7kNvwEcgwNG&_nc_oc=AdmR7gOLsCyRtZFFTOtgZlxnKFVh3BCEwn8MKl642WPk_VUZrxUz4btldY5pa7KbL-o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=iS802-4Z3r_mpz3m7YsCng&oh=00_AfspVZxLQZ7ocEDJckf9OBPu_Bltq_y7ZlItplt0GRiz8g&oe=69840796',
+          ),
+          onTap: () => customShowImageDialog(
+            context,
+            imageUrl:
+                'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GMlYwNPVqlQQ7kNvwEcgwNG&_nc_oc=AdmR7gOLsCyRtZFFTOtgZlxnKFVh3BCEwn8MKl642WPk_VUZrxUz4btldY5pa7KbL-o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=iS802-4Z3r_mpz3m7YsCng&oh=00_AfspVZxLQZ7ocEDJckf9OBPu_Bltq_y7ZlItplt0GRiz8g&oe=69840796',
+          ),
+        ),
+        GestureDetector(
+          onTap: () => customShowImageDialog(
+            context,
+            imageUrl:
+                'https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.6435-9/158710409_125579872903702_3483346112204379025_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9tBydLDPPBQQ7kNvwHGKzt8&_nc_oc=AdnqfA2uTJ-iWaTovesLJ0xvXghXSz8Uw-AUgf7SaAHEFqar2yTRgE-90dJgipoKcHI&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&_nc_gid=rfqXjR1NgNCksa1q6V70xQ&oh=00_Afv9b76RmOltLSIshv_ecV1Aoqpw2QARo8V_3HxDH3ercg&oe=69A5BCB4',
+          ),
+          child: Container(
+            padding: const EdgeInsets.all(8),
             color: Colors.teal[100],
-            image: const DecorationImage(
-              image: AssetImage('assets/images/mirror_selfie.jpg'),
-              fit: BoxFit.cover,
+            child: Image.network(
+              'https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.6435-9/158710409_125579872903702_3483346112204379025_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9tBydLDPPBQQ7kNvwHGKzt8&_nc_oc=AdnqfA2uTJ-iWaTovesLJ0xvXghXSz8Uw-AUgf7SaAHEFqar2yTRgE-90dJgipoKcHI&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&_nc_gid=rfqXjR1NgNCksa1q6V70xQ&oh=00_Afv9b76RmOltLSIshv_ecV1Aoqpw2QARo8V_3HxDH3ercg&oe=69A5BCB4',
             ),
           ),
         ),
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.teal[100],
-            image: const DecorationImage(
-              image: AssetImage('assets/images/friends_fountain.webp'),
-              fit: BoxFit.cover,
-            ),
+        GestureDetector(
+          onTap: () => customShowImageDialog(
+            context,
+            imageUrl:
+                'https://akcchocolateshihtzus.com/wp-content/uploads/2021/11/Misto-LR-edits-5318.jpg',
           ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.teal[100],
-            image: const DecorationImage(
-              image: AssetImage('assets/images/asia_sleeping.jpg'),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.teal[100],
-            image: const DecorationImage(
-              image: AssetImage('assets/images/fit_pic.jpg'),
-              fit: BoxFit.cover,
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.teal[200],
+              image: DecorationImage(
+                image: NetworkImage(
+                  'https://akcchocolateshihtzus.com/wp-content/uploads/2021/11/Misto-LR-edits-5318.jpg',
+                ),
+              ),
             ),
           ),
         ),

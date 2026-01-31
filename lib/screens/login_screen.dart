@@ -76,7 +76,7 @@ class _LogInScreenState extends State<LogInScreen> {
                   child: Column(
                     children: [
                       Image.asset(
-                        'assets/images/NUCCITLogo_Black.png',
+                        'assets/images/seanstagram_logo.png',
                         height: ScreenUtil().setHeight(200),
                       ),
                       SizedBox(height: ScreenUtil().setHeight(30)),

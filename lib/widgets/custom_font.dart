@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:morales_mobprog/constants.dart';
 
 class CustomFont extends StatelessWidget {
   const CustomFont({
@@ -28,7 +29,7 @@ class CustomFont extends StatelessWidget {
       style: TextStyle(
         fontFamily: fontFamily,
         fontSize: fontSize,
-        color: color,
+        color: FB_DARK_PRIMARY,
         fontWeight: fontWeight,
         letterSpacing: letterSpacing,
         fontStyle: fontStyle,
