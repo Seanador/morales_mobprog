@@ -70,7 +70,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           backgroundColor: Colors.white,
                           child: CachedNetworkImage(
                             imageUrl:
-                                'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFFUoO5KtbMJ2Wp0DZrS_prHm-eyWo16vseb57JajXq-z8xWKmKAmM1d-JH2Uy7LMAQOISwEAsSj9yw0NQXS1Kv&_nc_ohc=MsokFG1hdoIQ7kNvwEPg6_Z&_nc_oc=AdkdMT8ttrPng9mqr4Sun5QFkvlJgo2g5RbK-483stYr-57rQOx5HXDzAf4pHgddQ3o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=2nIPmj62pJcCyjS-lSQ69g&oh=00_Afo3NbLniA25eSUFxvivN5GcGrUc8mLxZqgtbe9MMC3SRw&oe=697BE656',
+                                'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GMlYwNPVqlQQ7kNvwEcgwNG&_nc_oc=AdmR7gOLsCyRtZFFTOtgZlxnKFVh3BCEwn8MKl642WPk_VUZrxUz4btldY5pa7KbL-o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=iS802-4Z3r_mpz3m7YsCng&oh=00_AfspVZxLQZ7ocEDJckf9OBPu_Bltq_y7ZlItplt0GRiz8g&oe=69840796',
                             imageBuilder: (context, imageProvider) =>
                                 CircleAvatar(
                                   radius: 48,
@@ -222,7 +222,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           imageUrl:
               'https://www.petplace.com/article/breed/media_15ad72c2fdb39acf09aafa9934912c89bfa08665a.jpeg?width=1200&format=pjpg&optimize=medium',
           profileImageUrl:
-              'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFFUoO5KtbMJ2Wp0DZrS_prHm-eyWo16vseb57JajXq-z8xWKmKAmM1d-JH2Uy7LMAQOISwEAsSj9yw0NQXS1Kv&_nc_ohc=MsokFG1hdoIQ7kNvwEPg6_Z&_nc_oc=AdkdMT8ttrPng9mqr4Sun5QFkvlJgo2g5RbK-483stYr-57rQOx5HXDzAf4pHgddQ3o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=2nIPmj62pJcCyjS-lSQ69g&oh=00_Afo3NbLniA25eSUFxvivN5GcGrUc8mLxZqgtbe9MMC3SRw&oe=697BE656',
+              'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GMlYwNPVqlQQ7kNvwEcgwNG&_nc_oc=AdmR7gOLsCyRtZFFTOtgZlxnKFVh3BCEwn8MKl642WPk_VUZrxUz4btldY5pa7KbL-o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=iS802-4Z3r_mpz3m7YsCng&oh=00_AfspVZxLQZ7ocEDJckf9OBPu_Bltq_y7ZlItplt0GRiz8g&oe=69840796',
         ),
         PostCard(
           userName: username,
@@ -230,7 +230,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           numOfLikes: 95,
           date: 'June 11',
           profileImageUrl:
-              'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFFUoO5KtbMJ2Wp0DZrS_prHm-eyWo16vseb57JajXq-z8xWKmKAmM1d-JH2Uy7LMAQOISwEAsSj9yw0NQXS1Kv&_nc_ohc=MsokFG1hdoIQ7kNvwEPg6_Z&_nc_oc=AdkdMT8ttrPng9mqr4Sun5QFkvlJgo2g5RbK-483stYr-57rQOx5HXDzAf4pHgddQ3o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=2nIPmj62pJcCyjS-lSQ69g&oh=00_Afo3NbLniA25eSUFxvivN5GcGrUc8mLxZqgtbe9MMC3SRw&oe=697BE656',
+              'https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/619113350_1499222955539380_5128686072145000426_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GMlYwNPVqlQQ7kNvwEcgwNG&_nc_oc=AdmR7gOLsCyRtZFFTOtgZlxnKFVh3BCEwn8MKl642WPk_VUZrxUz4btldY5pa7KbL-o&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=iS802-4Z3r_mpz3m7YsCng&oh=00_AfspVZxLQZ7ocEDJckf9OBPu_Bltq_y7ZlItplt0GRiz8g&oe=69840796',
         ),
       ],
     );
@@ -294,17 +294,31 @@ class _ProfileScreenState extends State<ProfileScreen> {
         GestureDetector(
           onTap: () => customShowImageDialog(
             context,
-            imageUrl:
-                'https://akcchocolateshihtzus.com/wp-content/uploads/2021/11/Misto-LR-edits-5318.jpg',
+            imageUrl: 'assets/images/fit_pic.jpg',
+            isNetworkImage: false,
           ),
           child: Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               color: Colors.teal[200],
               image: DecorationImage(
-                image: NetworkImage(
-                  'https://akcchocolateshihtzus.com/wp-content/uploads/2021/11/Misto-LR-edits-5318.jpg',
-                ),
+                image: AssetImage('assets/images/fit_pic.jpg'),
+              ),
+            ),
+          ),
+        ),
+        GestureDetector(
+          onTap: () => customShowImageDialog(
+            context,
+            imageUrl: 'assets/images/asia_sleeping.jpg',
+            isNetworkImage: false,
+          ),
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.teal[200],
+              image: DecorationImage(
+                image: AssetImage('assets/images/asia_sleeping.jpg'),
               ),
             ),
           ),

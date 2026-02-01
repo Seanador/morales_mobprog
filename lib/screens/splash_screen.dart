@@ -66,10 +66,7 @@ class _SplashScreenState extends State<SplashScreen>
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              // Top spacer
               const SizedBox(height: 40),
-
-              // Logo Section
               Expanded(
                 child: FadeTransition(
                   opacity: _fadeAnimation,
@@ -85,19 +82,18 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
 
-              // Bottom Loading Section
+              // loading section
               FadeTransition(
                 opacity: _fadeAnimation,
                 child: Column(
                   children: [
-                    // Minimalist Loading Dots
+                    // loading dots
                     AnimatedBuilder(
                       animation: _pulseController,
                       builder: (context, child) {
                         return Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: List.generate(3, (index) {
-                            // Stagger the animation for each dot
                             final delay = index * 0.2;
                             final adjustedValue =
                                 (_pulseController.value + delay) % 1.0;

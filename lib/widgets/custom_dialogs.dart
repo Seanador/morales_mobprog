@@ -72,21 +72,53 @@ customOptionDialog(
   );
 }
 
-customShowImageDialog(BuildContext context, {required imageUrl}) {
+customShowImageDialog(
+  BuildContext context, {
+  required String imageUrl,
+  bool isNetworkImage = true,
+}) {
   AlertDialog alertDialog = AlertDialog(
-    content: Container(
-      height: 300.h,
-      child: Center(
-        child: CachedNetworkImage(
-          imageUrl: imageUrl,
-          progressIndicatorBuilder: (context, url, downloadProgress) =>
-              CircularProgressIndicator(
-                color: FB_DARK_PRIMARY,
-                value: downloadProgress.progress,
-              ),
-          errorWidget: (context, url, error) => Icon(Icons.error, size: 100.sp),
+    contentPadding: EdgeInsets.zero,
+    content: Stack(
+      children: [
+        Container(
+          height: 300.h,
+          child: Center(
+            child: isNetworkImage
+                ? CachedNetworkImage(
+                    imageUrl: imageUrl,
+                    progressIndicatorBuilder:
+                        (context, url, downloadProgress) =>
+                            CircularProgressIndicator(
+                              color: FB_DARK_PRIMARY,
+                              value: downloadProgress.progress,
+                            ),
+                    errorWidget: (context, url, error) =>
+                        Icon(Icons.error, size: 100.sp),
+                  )
+                : Image.asset(
+                    imageUrl,
+                    errorBuilder: (context, error, stackTrace) =>
+                        Icon(Icons.error, size: 100.sp),
+                  ),
+          ),
         ),
-      ),
+        Positioned(
+          top: 8,
+          right: 8,
+          child: GestureDetector(
+            onTap: () => Navigator.of(context).pop(),
+            child: Container(
+              padding: EdgeInsets.all(4),
+              decoration: BoxDecoration(
+                color: Colors.black54,
+                shape: BoxShape.circle,
+              ),
+              child: Icon(Icons.close, color: Colors.white, size: 20.sp),
+            ),
+          ),
+        ),
+      ],
     ),
   );
 
